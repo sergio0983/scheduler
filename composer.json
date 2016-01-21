@@ -1,16 +1,12 @@
 {
     "name": "alborada/scheduler",
-    "description": "Calendario de Eventos",
-    "type": "library",
     "require": {
-        "jquery/jquery": "2.*"
+        "components/jquery": "2.*"
     },
-    "license": "Free",
     "authors": [
         {
             "name": "sergioalborada",
             "email": "sergio0983@gmail.com"
         }
-    ],
-	"version":"0.9"
+    ]
 }
