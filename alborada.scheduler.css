@@ -1,0 +1,156 @@
+.scheduler *{
+	position:relative;
+	margin:0;
+	padding:0;
+	border:0;
+}
+.scheduler{
+	
+}
+.scheduler > .title{
+	background: #2196F3;
+    float: left;
+    width: 100%;
+    padding: 11px;
+    box-sizing: border-box;
+    height: 53px;
+    border: 0px;
+}
+.scheduler > .title a{
+	color: white;
+	float: left;
+	font-size: 23px;
+	margin-right: 13px;
+	cursor:pointer;
+}
+.scheduler > .title h1{
+    float: left;
+    margin: 0;
+    max-width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.scheduler > .title a[class^='view']{
+    float: right;
+    margin-left: 13px;
+    font-size: 13px;
+    margin-right: 0px;
+    margin-top: 7px;
+}
+.scheduler > .title a[class^='view']:hover, .scheduler > .title a[class^='view'].selected{
+	text-decoration:underline;
+}
+
+
+.scheduler-content {
+	float: left;
+    width: 100%;
+    height: calc(100% - 53px);
+    overflow: auto;
+}
+.scheduler-content > table{
+    float: left;
+    width: 100%;
+    border-collapse: collapse;
+    height: calc(100% - 1px);
+    /* overflow: auto; */
+    table-layout: fixed;
+}
+.scheduler-content > table tr:first-child{
+	height: 29px;
+}
+.scheduler-content > table th, .scheduler-content > table td{
+    /*border-bottom: 1px solid lightgray;*/
+	box-shadow: 0px 1px 0px lightgray;
+    border-collapse: collapse;
+    padding: 7px 0px;
+    font-weight: normal;
+    box-sizing: border-box;
+	color: #333;
+	font-size:13px;
+	cursor: default
+}
+.scheduler-content > table th{
+	
+}
+.scheduler-content > table th:first-child{
+	width: 73px;
+}
+.scheduler-content > table td .event{
+    position: absolute;
+    width: 97%;
+    margin: 0 1.5%;
+    font-size: 100%;
+    color: white;
+    background: #2196F3;
+    padding: 3px 7px;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    z-index: 1;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+	text-align: center;
+}
+.scheduler.monthly  .scheduler-content > table td .event{
+	width: 97%;
+    /* white-space: nowrap; */
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    margin-top: 1px;
+}
+.scheduler-content > table td .event a{
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    right: 3px;
+    cursor: pointer;
+}
+.scheduler-content > table td span.dayOfMonth{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    color: #ccc;
+}
+.scheduler-content > table td span.dayOfMonth +.event{
+	margin-top:13px;
+}
+
+
+
+
+.scheduler-form p input[type='checkbox']{
+    float: left;
+    align-self: center;
+}
+.scheduler-form p input[type='checkbox']+label{
+   margin-left;7px;
+}
+.scheduler-form p label{
+float: left;
+    /* height: 20px; */
+    line-height: 1.5;
+     align-self: center;
+    margin-left: 3px;
+    white-space: nowrap;
+    display: block;
+}
+.scheduler-form *[data-form] p{
+    float: left;
+    width: 100%;
+    margin-top: 7px;
+    display: inline-flex;
+    height: 29px;
+    min-height: 29px;
+}
+.scheduler-form *[data-form] select{
+	float: left;
+	padding: 0px;
+	width: 49px;
+	margin-right: 7px;
+}
