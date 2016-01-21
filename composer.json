@@ -1,9 +1,18 @@
 {
-    "name": "alborada/scheduler",
-    "authors": [
-        {
-            "name": "sergioalborada",
-            "email": "sergio0983@gmail.com"
-        }
-    ]
+  "name": "scheduler",
+  "repo": "alborada/scheduler",
+  "version": "0.9",
+  "description": "Event Scheduler",
+  "keywords": [
+    "scheduler",
+    "event"
+  ],
+  "main": "alborada.scheduler.js",
+  "scripts": [
+    "alborada.scheduler.js"
+  ],
+  "styles": [
+	"alborada.scheduler.css"
+  ]
+  "license": "MIT"
 }
