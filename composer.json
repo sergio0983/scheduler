@@ -1,8 +1,5 @@
 {
     "name": "alborada/scheduler",
-    "require": {
-        "components/jquery": "2.*"
-    },
     "authors": [
         {
             "name": "sergioalborada",
